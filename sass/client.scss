@@ -1,0 +1,64 @@
+.client{
+	background: white;
+}
+
+.client .head_client{
+	padding-bottom: 55px;
+}
+
+.head_client h2{
+	color: #656464	;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.head_client .line_client{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.company {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	padding-left: 90px;
+	padding-bottom: 50px;
+}
+
+.company_img {
+	width: 25%;
+	padding-top: 50px;
+}
+
+@media screen and (max-width:870px){
+	.company_img {
+		width: 33%;
+	}
+}
+
+@media screen and (max-width:685px){
+	.company_img {
+		width: 50%;
+	}
+	
+	.company {
+		justify-content: center;
+		align-items: center;
+		
+	}
+}
+
+@media screen and (max-width:500px){
+	.company_img {
+		width: 100%;
+		text-align: center;
+	}
+
+	.company{
+		padding-left: 0px;
+	}
+
+	
+}

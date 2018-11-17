@@ -1,0 +1,272 @@
+*{
+    font-family: Arial, sans-serif, Helvetica;
+    box-sizing: border-box;
+    }
+    
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+        width: 100%;
+    }
+    
+    header{
+        background: url(../img/bg_picture.jpg) no-repeat center top / cover;
+        height: 100vh;
+        width: 100%;	
+    }
+    
+    .menu{
+        display: flex;
+        text-align: center;
+        padding: 25px 20px;
+        position: relative;
+    }
+    
+    .logo p{
+        color: white;
+        font-size: 24px;
+        text-transform: uppercase;
+        padding-right: 50px;
+        padding-left: 35px;
+    }
+    
+    .logo span{
+        color: #c0234c;
+    }
+
+    .menu_nav{
+        width: 100%;
+    }
+
+   .nav_list{
+        display: flex;
+        width: 100%;
+    }
+    
+    .nav_item-1{
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .nav_item-1:hover{
+        color: #107a87;
+    }
+
+    .nav_list-icon{
+        display: flex;
+    }
+    
+    
+    .nav_list .nav_item{
+        font-size: 20px;
+        width: 14%;
+    }
+    
+    .nav_list .nav_item a{
+        text-decoration: none;
+        color: white;
+    }	
+    
+    .nav_list-icon .nav_item-icon:not(:last-child){
+        padding-right: 20px;
+    }
+    
+    .nav_item-icon a{
+        border: solid white 1px;
+        border-radius: 15px;
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+    }
+    
+     .nav_item a:hover{
+        color: #107a87;
+    }
+    
+    .nav_item-icon a:hover{
+        color: #107a87;
+    }
+    
+    .line{
+        width: 100%;
+        height: 1px;;
+        background: white;
+        opacity: 0.3;
+    }
+    
+    .topic{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    
+    .topic .topic_text{
+        border: 1px;
+        border-color: white;
+        border: solid 1px white;
+        width: 550px;
+        padding: 30px;
+    }
+    
+    .topic_text{
+        text-align: center;
+        color: white;
+    }
+    
+    .topic_text h1{
+        font-size: 48px;
+        text-transform: uppercase;
+        padding-bottom: 50px;
+    }
+    
+    .topic_button{
+        border: solid white 1px;
+        border-top: none;
+        width: 110px;
+        text-align: center;
+        margin: auto;
+        background: transparent;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: white;
+        position: static;
+        height: 35px;;
+        cursor: pointer;
+    }
+    
+    .topic_button:hover{
+        color: black;
+        background: white;
+        font-weight: bold;
+    }
+
+
+    @media screen and (max-width:768px){
+       
+        .nav_list{
+            display: block;
+            width: 100%;
+        }
+
+        .nav_item-1{
+            font-size: 23px;
+            display: block;
+        }
+
+        .nav_list .nav_item a {
+            display: block;
+        }
+
+        .nav_item a{
+            text-align: center;
+        }
+
+        .nav_item{
+            margin-bottom: 5px;
+        }
+
+        .nav_list .nav_item{
+            width: 100%;
+        }
+
+        .line{
+            width: 100%;
+            height: 1px;;
+            background: white;
+            opacity: 0;
+        }
+        .topic {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .nav_list{
+            display: none;
+        }
+
+        .nav_item-1:hover +.nav_list{
+            display: block;
+            height:10px;
+        }
+        
+    }
+
+    @media screen and (max-width:600px) {
+        .topic {
+        top: 55%;
+    }
+
+    .topic .topic_text {
+        border: 1px;
+        border-color: white;
+        border: solid 1px white;
+        width: 370px;
+        padding: 25px;
+    }
+
+    .topic_text h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        padding-bottom: 35px;
+    }
+
+    .nav_list{
+        display: none;
+    }
+
+    .nav_item-1:hover +.nav_list{
+        display: block;
+        height:10px;
+    }
+
+    }
+
+    @media screen and (max-width:500px){
+        .logo p {
+            font-size: 34px;
+        }
+
+        .menu {
+            display: flex;
+            text-align: right;
+            padding: 25px 20px;
+            position: relative;
+        }
+
+        .nav_list-icon {
+            display: none;
+        }
+
+        .menu_nav{
+            text-align: right
+        }
+
+        .nav_item-1 {
+            font-size: 32px;
+        }
+
+        .nav_item a{
+            text-align: right;
+        }
+
+        .nav_list{
+            display: none;
+        }
+
+        .nav_item-1:hover +.nav_list{
+            display: block;
+            height:10px;
+        }
+
+        .topic {
+            top: 57%;
+        }
+
+    }
